@@ -15,7 +15,7 @@ class IrisInput(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome! API is running."}
+    return {"message": "Welcome to the Fully Automated Iris Prediction API."}
 
 @app.post("/predict")
 def predict_species(iris_input: IrisInput):
